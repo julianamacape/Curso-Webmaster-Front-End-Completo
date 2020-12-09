@@ -1,0 +1,77 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box1 {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background-color: red;
+    animation-name: mudar1;
+    animation-duration: 2s;
+    border-radius: 0%;
+    float: left;
+
+}
+
+@keyframes mudar1 {
+    from {background-color: red;}
+    to {background-color: orange;}
+
+    from {border-radius: 0%}
+    to {border-radius: 50%}
+}
+
+.box2 {
+    width: 50px;
+    max-width: 50px;
+    height: 50px;
+    background-color: blue;
+    animation-name: mudar2;
+    animation-duration: 2s;
+    border-radius: 0%;
+    float: left;
+
+}
+
+@keyframes mudar2 {
+    from {background-color: blue;}
+    to {background-color: purple;}
+
+    from {border-radius: 0%}
+    to {border-radius: 50%}
+}
+
+.box3 {
+    width: 50px;
+    margin-left: 10px;
+    height: 50px;
+    background-color: brown;
+    animation-name: mudar3;
+    animation-duration: 2s;
+    border-radius: 0%;
+    float: left;
+}
+
+@keyframes mudar3 {
+    from {background-color: brown;}
+    to {background-color: gray;}
+
+    from {border-radius: 0%}
+    to {border-radius: 50%}
+}
