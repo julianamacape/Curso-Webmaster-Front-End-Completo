@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+header {
+    border: 1px solid white;
+    width: 100%;
+    height: 80px;
+    padding: 0 3%;
+}
+
+.menu-icon {
+    margin-top: 20px;
+    float: left;
+}
+
+.menu-line {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 30px;
+    margin: 6.5px 0;
+}
+
+.header-img {
+    margin: 25px 25px;
+    float: left;
+}
+
+.header-img img {
+    width: 130px;
+}
+
+.next {
+    border: 1px solid #1BBC9B;
+    border-radius: 50px;
+    display: inline-block;
+    transition: .3s;
+    margin-top: 15px;
+    float: right;
+}
+
+.next a {
+    color: #1BBC9B;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 40px;
+    display: inline-block;
+    vertical-align: middle;
+    transition: .3s;
+}
+
+.next:hover {
+    border: 1px solid black;
+}
+
+.next a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+img[alt="Notification Bell"] {
+    float: right;
+    margin: 20px 18px;
+}
+
+.username {
+    float: right;
+    margin: 10px 0 10px 30px;
+}
+
+.username img {
+    width: 45px;
+    display: inline-block;
+}
+
+.username p {
+    display: inline-block;
+    color: #384044;
+    font-size: 13px;
+    vertical-align: top;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+
+img[alt="Arrow Down"] {
+    float: right;
+    width: 10px;
+    margin-top: 30px;
+    margin-left: 8px;
+}
+
+main {
+    height: 100vh;
+    background-color: #F2F7FB;
+}
+
+
+
