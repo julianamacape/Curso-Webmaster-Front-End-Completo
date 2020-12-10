@@ -31,7 +31,7 @@
 
 @keyframes mudar1 {
     from {background-color: red;}
-    to {background-color: orange;}
+    to {background-color: orange;transform: rotate(180deg);transform: translateX(50%);}
 
     from {border-radius: 0%}
     to {border-radius: 50%}
@@ -51,7 +51,7 @@
 
 @keyframes mudar2 {
     from {background-color: blue;}
-    to {background-color: purple;}
+    to {background-color: purple;transform: rotate(180deg);transform: translateX(50%);}
 
     from {border-radius: 0%}
     to {border-radius: 50%}
@@ -66,12 +66,14 @@
     animation-duration: 2s;
     border-radius: 0%;
     float: left;
+    position: relative;
 }
 
 @keyframes mudar3 {
     from {background-color: brown;}
-    to {background-color: gray;}
+    to {background-color: gray; transform: rotate(180deg); transform: translateX(50%);}
 
     from {border-radius: 0%}
     to {border-radius: 50%}
 }
+
