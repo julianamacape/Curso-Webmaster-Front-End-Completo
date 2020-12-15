@@ -5,15 +5,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-main {
-    display: flex;
-}
-
-aside {
-    background-image: repeating-linear-gradient(blue 10%, pink 19%);
-}
-
-article {
-    background-image: repeating-linear-gradient(pink, blue, orange, red, green);
-}
