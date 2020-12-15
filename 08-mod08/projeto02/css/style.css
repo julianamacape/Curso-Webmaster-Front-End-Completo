@@ -20,7 +20,6 @@ header {
 .center {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 2%;
 }
 
 header .center img {
@@ -29,7 +28,7 @@ header .center img {
     padding: 20px 0;
 }
 
-main .center {
+main .banner {
     height: 500px;
     background-image: url('../images/main-img.jpg');
     background-attachment: fixed;
@@ -38,9 +37,18 @@ main .center {
     background-size: cover;
 }
 
+.banner img {
+    width: 50px;
+    position: relative;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .form-box {
     width: 300px;
     padding-top: 40px;
+    margin-right: 40px;
     float: right;
 }
 
@@ -100,10 +108,184 @@ form p {
     text-shadow: .5px .5px .5px white;
 }
 
-main .center img {
-    width: 50px;
+.one, .two, .three, .four, .five {
+    border-bottom: 2px solid white;
+}
+
+.one {
+    text-align: center;
+    background-color: #EAEFF2;
+    width: 100%;
+    line-height: 35px;
+    padding: 60px;
+}
+
+.one h2 {
+    font-weight: 300;
+}
+
+.sunset {
+    
+    width: 60%;
+    height: 230px;
+    overflow: hidden;
+    float: right;
+    /*
+    width: 60%;
+    height: 230px;
+    float: right;
+    background-image: url('../images/sunset.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    */
+}
+
+.sunset img {
+    width: 100%;
     position: relative;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    top: -180px;
+}
+
+
+.sunset-text {
+    width: 40%;
+    height: 230px;
+    float: left;
+    background-color: #E8F6FF;
+}
+
+.sunset-text p {
+    padding: 100px 30px;
+    line-height: 30px;
+}
+
+.door {
+    
+    width: 60%;
+    height: 230px;
+    overflow: hidden;
+    float: left;
+    /*
+    width: 60%;
+    height: 230px;
+    float: right;
+    background-image: url('../images/sunset.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    */
+}
+
+.door img {
+    width: 100%;
+    position: relative;
+    top: -180px;
+}
+
+
+.door-text {
+    width: 40%;
+    height: 230px;
+    float: right;
+    background-color: #E8F6FF;
+}
+
+.door-text p {
+    padding: 100px 30px;
+    line-height: 30px;
+}
+
+.bedroom {
+    
+    width: 60%;
+    height: 230px;
+    overflow: hidden;
+    float: right;
+    /*
+    width: 60%;
+    height: 230px;
+    float: right;
+    background-image: url('../images/sunset.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    */
+}
+
+.bedroom img {
+    width: 100%;
+    position: relative;
+    top: -120px;
+}
+
+
+.bedroom-text {
+    width: 40%;
+    height: 230px;
+    float: left;
+    background-color: #E8F6FF;
+}
+
+.bedroom-text p {
+    padding: 100px 30px;
+    line-height: 30px;
+}
+
+.restaurant {
+    
+    width: 60%;
+    height: 230px;
+    overflow: hidden;
+    float: left;
+    /*
+    width: 60%;
+    height: 230px;
+    float: right;
+    background-image: url('../images/sunset.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    */
+}
+
+.restaurant img {
+    width: 100%;
+    position: relative;
+    top: -180px;
+}
+
+
+.restaurant-text {
+    width: 40%;
+    height: 230px;
+    float: right;
+    background-color: #E8F6FF;
+}
+
+.restaurant-text p {
+    padding: 100px 30px;
+    line-height: 30px;
+}
+
+.final {
+    background-color:  #EAEFF2;
+    text-align: center;
+    padding: 40px;
+}
+
+.final h3 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.final p {
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+footer {
+    font-size: 12px;
+    text-align: center;
+    padding: 50px;
 }
