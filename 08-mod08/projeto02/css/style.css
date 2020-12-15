@@ -73,6 +73,7 @@ form input {
 form label {
     margin-top: 15px;
     font-size: 13px;
+    text-shadow: .5px .5px .5px white;
 }
 
 form input:focus {
@@ -96,6 +97,7 @@ form input[type="submit"]:active {
 
 form p {
     font-size: 12px;
+    text-shadow: .5px .5px .5px white;
 }
 
 main .center img {
