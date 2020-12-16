@@ -324,3 +324,256 @@ footer {
     text-align: center;
     padding: 50px;
 }
+
+@media screen and (max-width: 1041px) {
+
+    .one, .two, .three, .four, .five, .final {
+        height: 34vh;
+    }
+
+    .overlay {
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.61);
+        position: absolute;
+        transition: 3s;
+    }
+
+    .overlay:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .sunset {
+        height: 100%;
+        background-image: url('../images/sunset.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .sunset img {
+        display: none;
+    }
+
+    .sunset-text {
+        height: 100%;
+    }
+
+    .sunset-text p {
+        padding: 25% 30px;
+    }
+
+    .door {
+        height: 100%;
+        background-image: url('../images/abre-portas.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .door img {
+        display: none;
+    }
+
+    .door-text {
+        height: 100%;
+    }
+
+    .door-text p {
+        padding: 25% 30px;
+    }
+
+    .bedroom {
+        height: 100%;
+        background-image: url('../images/bedroom.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .bedroom img {
+        display: none;
+    }
+
+    .bedroom-text {
+        height: 100%;
+    }
+
+    .bedroom-text p {
+        padding: 28% 30px;
+    }
+
+    .restaurant {
+        height: 100%;
+        background-image: url('../images/restaurant.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    
+    .restaurant img {
+        display: none;
+    }
+
+    .restaurant-text {
+        height: 100%;
+    }
+
+    .restaurant-text p {
+        padding: 25% 30px;
+    }
+    
+    .final {
+        background-color:  #EAEFF2;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .final h3 {
+        font-size: 19px;
+        margin-bottom: 20px;
+    }
+    
+    .final p {
+        font-size: 13px;
+        line-height: 25px;
+    }
+}
+
+@media screen and (max-width: 499px) {
+
+    header .center img {
+        width: 150px;
+        float: none;
+        padding: 20px 0;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .form-box {
+        width: 300px;
+        margin-right: 0;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .banner img {
+        display: none;
+    }
+
+    .one {
+        text-align: center;
+        background-color: #EAEFF2;
+        width: 100%;
+        line-height: 35px;
+        padding: 15%;
+    }
+    
+    .one h2 {
+        font-weight: 300;
+    }
+
+    .overlay {
+        display: none;
+    }
+
+    .clear {
+        display: none;
+    }
+
+    .textbg {
+        background-color: rgba(255, 255, 255, 0.466);
+        width: 80%;
+        margin: 0 auto;
+        border-radius: 6px;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .sunset, .door, .bedroom, .restaurant {
+        display: none;
+    }
+
+    .sunset-text, .door-text, .bedroom-text, .restaurant-text {
+        width: 100%;
+        float: none;
+    }
+
+    .sunset-text {
+        height: 100%;
+        background-image: url('../images/sunset.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .sunset-text p {
+        text-align: center;
+        padding: 0;
+        line-height: 20px;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px whitesmoke;
+    }
+
+    .door-text {
+        height: 100%;
+        background-image: url('../images/abre-portas.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .door-text p {
+        text-align: center;
+        padding: 0;
+        line-height: 20px;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px whitesmoke;
+    }
+
+    .bedroom-text {
+        height: 100%;
+        background-image: url('../images/bedroom.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .bedroom-text p {
+        text-align: center;
+        padding: 0;
+        line-height: 20px;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px whitesmoke;
+    }
+
+    .restaurant-text {
+        height: 100%;
+        background-image: url('../images/restaurant.jpg');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        
+    }
+    
+    .restaurant-text p {
+        text-align: center;
+        padding: 0;
+        line-height: 20px;
+        font-size: 14px;
+        text-shadow: 1px 1px 1px whitesmoke;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .one {
+        padding-top: 6%;
+    }
+
+    .final {
+        height: 350px;
+    }
+}
