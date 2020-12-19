@@ -18,14 +18,6 @@ body, html {
     clear: both;
 }
 
-.overlay {
-    width: 100%;
-    height: 522px;
-    background-color: rgba(31, 21, 140, 0.58);
-    position:absolute ;
-    z-index: 2;
-}
-
 .main-banner {
     width: 100%;
     height: 522px;
@@ -34,16 +26,18 @@ body, html {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: relative;
-    z-index: 1;
+}
+
+.overlay {
+    width: 100%;
+    height: 522px;
+    background-color: rgba(31, 21, 140, 0.58);
 }
 
 .dankilogo {
     font-family: 'Montserrat Alternates', sans-serif;;
-    position: relative;
     font-size: 25px;
     color: white;
-    z-index: 4;
     background-color: rgba(82, 47, 151, 0.562);
     padding: 20px;
     float: left;
@@ -54,8 +48,6 @@ body, html {
 .menu-header {
     width: 500px;
     height: 50px;
-    position:relative ;
-    z-index: 4;
     float: right;
     margin: 70px 6% 0px 0px;
 }
@@ -96,18 +88,13 @@ body, html {
 }
 
 aside {
-    position:relative ;
-    z-index: 4;
     font-family: 'Lato', sans-serif;
     color: white;
-    max-width: 800px;
-    margin: 60px auto;
+    width: 400px;
+    margin: 90px auto;
     text-shadow: black 2px 2px 5px;
-}
-
-.aside-text {
-    float: right;
     position: relative;
+    left: 150px;
 }
 
 aside h1 {
@@ -122,35 +109,36 @@ aside p {
     width: 400px;
 }
 
-section#primeira {
+.first {
     background-color: #5e3ea0;
 }
 
-.seção1 {
+.first-content {
     max-width: 1200px;
     height: 300px;
     margin: 0 auto;
-    padding-top: 50px;
-}
-
-.seção1-text {
-    float: left;
+    font-family: 'Lato', sans-serif;
     color: #ffffffbd;
     text-shadow: black 2px 2px 5px;
-    font-family: 'Lato', sans-serif;
+    position: relative;
 }
 
-.seção1-text h2 {
+.first-content-text {
+    padding-top: 50px;
+    float: left;
+}
+
+.first-content-text h2 {
     font-weight: 300;
     font-size: 30px;
     margin-bottom: 20px;
 }
 
-.seção1-text p {
+.first-content-text p {
     font-size: 18px;
 }
 
-ul.one {
+.first-content-text ul {
     list-style-position: inside;
 }
 
@@ -177,27 +165,97 @@ input[type="submit"]:focus {
     outline: none;
 }
 
-.seção1-imagem {
-    float: right;
-    position: relative;
-    z-index: 5;
-    width: 630px;
-    top: -145px;
+.first-content-img {
+    float: left;
+    width: 380px;
+    position: absolute;
+    left: 500px;
+    top: -79px;
 }
 
-.seção1-imagem img {
-    width: 400px;
-    
+.first-content-img img {
+    width: 100%;
 }
 
-.seção2 {
+.second {
+    height: 500px;
+}
+
+.second-content {
+    text-align: center;
     max-width: 1200px;
     margin: 0 auto;
-    height: 600px;
-    position: relative;
-    z-index: 6;
+    font-family: 'Lato', sans-serif;
+    color: black;
 }
 
-section#segunda {
-    background-color: white;
+.second-content h2 {
+    font-weight: 300;
+    font-size: 30px;
+    padding: 80px 0px 40px 0px;
 }
+
+.second-content p {
+    font-size: 18px;
+    padding: 0px 90px;
+    line-height: 28px;
+}
+
+.floated {
+    width: 600px;
+    position: relative;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    border-radius: 5px;
+    box-shadow: 0px 0px 17px 7px rgba(0, 0, 0, 0.185);
+}
+
+.float1 {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(16, 12, 44);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.float2 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(255, 251, 251);
+    border-bottom-left-radius: 5px ;
+    border-bottom-right-radius: 5px;
+}
+
+.final {
+    display: flex;
+    height: 400px;
+    font-family: 'Lato', sans-serif;
+}
+.third {
+    background-color: #7e56cf;
+    width: 50%;
+    height: 100%;
+    color: #ffffffbd;
+    text-align: right;
+    padding: 160px 20px 0px 150px;
+    line-height: 25px;
+}
+
+.third h2 {
+    margin-bottom: 10px;
+}
+
+.fourth {
+    width: 50%;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding: 160px 150px 0px 20px;
+    line-height: 25px;
+}
+
+.four h2 {
+    margin-bottom: 10px;
+}
+
