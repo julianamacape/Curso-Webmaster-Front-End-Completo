@@ -52,7 +52,7 @@ body, html {
     margin: 70px 6% 0px 0px;
 }
 
-.menu-header a {
+nav div.menu-header a {
     color: #ffffffbd;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
@@ -64,26 +64,26 @@ body, html {
     float: right;
 }
 
-.menu-header a[id="home"] {
+nav div.menu-header a[id="home"] {
     width: 47.781px;
 }
 
-.menu-header a[id="serviços"] {
+nav div.menu-header a[id="serviços"] {
     width: 70px;
 }
 
-.menu-header a[id="sobre"] {
+nav div.menu-header a[id="sobre"] {
     width: 50px;
 }
 
-.menu-header a[id="contato"] {
+nav div.menu-header a[id="contato"] {
     width: 66px;
 }
-.menu-header a:active {
+nav div.menu-header a:active {
     font-size: 21px;
 }
 
-.menu-header a:hover {
+nav div.menu-header a:hover {
     font-weight: 400;
 }
 
@@ -266,7 +266,7 @@ input[type="submit"]:focus {
     font-size: 14px;
 }
 
-.fourth img {
+.fourth #profile {
     display: block;
     margin-right: 150px;
     width: 60px;
@@ -274,6 +274,11 @@ input[type="submit"]:focus {
     position: relative;
     top: -10px;
     left: -10px;
+}
+
+.icons {
+    margin-top: 10px;
+    width: 35px;
 }
 
 .final {
