@@ -249,7 +249,7 @@ input[type="submit"]:focus {
 .fourth {
     width: 50%;
     height: 100%;
-    background-color: white;
+    background-color: rgba(247, 248, 255, 0.87);
     color: black;
     padding: 160px 150px 0px 20px;
     line-height: 25px;
