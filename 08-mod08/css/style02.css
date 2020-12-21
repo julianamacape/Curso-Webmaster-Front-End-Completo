@@ -124,7 +124,7 @@ aside p {
 }
 
 .first-content-text {
-    padding-top: 50px;
+    padding: 50px 0px 0px 2%;
     float: left;
 }
 
@@ -240,12 +240,17 @@ input[type="submit"]:focus {
     height: 100%;
     color: #ffffffbd;
     text-align: right;
-    padding: 180px 20px 0px 300px;
+    padding: 190px 20px 0px 0px;
     line-height: 25px;
 }
 
+.third-content {
+    width: 400px;
+    float: right;
+}
+
 .third h2 {
-    margin-bottom: 35px;
+    margin-bottom: 5px;
 }
 
 .fourth {
@@ -257,8 +262,12 @@ input[type="submit"]:focus {
     line-height: 25px;
 }
 
+.fourth-content {
+    width: 400px;
+}
+
 .fourth-titles {
-    float: left;
+    display: inline-block;
 }
 
 .fourth h3 {
@@ -267,13 +276,13 @@ input[type="submit"]:focus {
 }
 
 .fourth #profile {
-    display: block;
+    display: inline-block;
     margin-right: 150px;
     width: 60px;
-    float: right;
     position: relative;
-    top: -10px;
-    left: -10px;
+    top: 0px;
+    left: 0px;
+    vertical-align: bottom;
 }
 
 .icons {
