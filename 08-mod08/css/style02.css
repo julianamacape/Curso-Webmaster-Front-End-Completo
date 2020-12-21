@@ -202,31 +202,26 @@ input[type="submit"]:focus {
 }
 
 .floated {
-    width: 560px;
+    max-width: 600px;
+    margin: 0 auto;
     position: relative;
-    left: 50%;
     top: 50px;
-    transform: translateX(-50%);
     border-radius: 5px;
     box-shadow: 0px 0px 17px 7px rgba(0, 0, 0, 0.185);
 }
 
-.float1 {
-    width: 100%;
-    height: 30px;
-    background-color: rgb(16, 12, 44);
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
+.float2 {
+    --aspect-ratio: 16/9;
+    height: 0;
+    padding-bottom: Calc(100% / (var(--aspect-ratio)));
+    position: relative;
 }
 
-.float2 {
-    overflow: hidden;
-    text-align: center;
+.float2 iframe {
+    position: absolute;
     width: 100%;
-    height: 300px;
-    background-color: rgb(255, 251, 251);
-    border-bottom-left-radius: 5px ;
-    border-bottom-right-radius: 5px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .team {
@@ -277,11 +272,7 @@ input[type="submit"]:focus {
 
 .fourth #profile {
     display: inline-block;
-    margin-right: 150px;
     width: 60px;
-    position: relative;
-    top: 0px;
-    left: 0px;
     vertical-align: bottom;
 }
 
@@ -360,7 +351,7 @@ input[type="submit"]:focus {
 .final-content-visitus-right {
     width: 70%;
     margin: 0 auto;
-    text-align: justify;
+    text-align: center;
 }
 
 .final-content-visitus-right h2 {
@@ -370,4 +361,138 @@ input[type="submit"]:focus {
 
 .final-content-visitus-right img {
     width: 85%;
+}
+
+footer {
+    background-color: #1B252C;
+    height: 80px;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+
+.footer-content {
+    margin: 0 auto;
+    max-width: 900px;
+    color: #ffffffbd;
+    font-size: 12px;
+    padding-top: 30px;
+}
+
+#footer-left {
+    float: left;
+}
+
+#footer-right {
+    float: right;
+}
+
+@media screen and (max-width: 1095px) {
+    .floated {
+        max-width: 550px;
+    }
+}
+
+@media screen and (max-width: 909px) {
+    .floated {
+        max-width: 470px;
+    }
+}
+
+@media screen and (max-width: 792px) {
+    .menu-header {
+        width: 400px;
+    }
+    
+    .first-content-img {
+        width: 300px;
+        position: absolute;
+        left: 400px;
+        top: 2px;
+    }
+
+    .team {
+        min-height: 450px;
+    }
+
+    .third-content {
+        width: 100%;
+    }
+
+    .third-content p {
+        padding-left: 5%;
+    }
+
+    .fourth-content {
+        width: 350px;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .main-banner {
+        height: 400px;
+    }
+
+    .overlay {
+        height: 100%;
+    }
+    .dankilogo {
+        font-size: 18px;
+        padding: 15px;
+        float: none;
+        width: 135px;
+        border-radius: 50px;
+        margin: 0 auto;
+        position: relative;
+        top: 30px;
+    }
+
+    .menu-header {
+        width: 335px;
+        height: 50px;
+        float: none;
+        margin: 50px auto;
+    }
+    
+    nav div.menu-header a {
+        margin: 0px 10px;
+        display: inline-block;
+        float: none;
+    }
+
+    aside {
+        width: 300px;
+        margin: 30px auto;
+        position: initial;
+        left: 0px;
+    }
+    
+    aside h1 {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    aside p {
+        text-align: center;
+        width: 100%;
+    }
+
+    .first-content-text {
+        padding: 10px 3% 3% 3%;
+        float: none;
+
+    }
+
+    .first-content-text h2{
+        text-align: center;
+    }
+
+    .first-content-text input{
+        margin: 0 auto;
+    }
+    .first-content-img {
+        display: none;
+    }
 }
