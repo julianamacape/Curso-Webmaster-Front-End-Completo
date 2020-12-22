@@ -428,7 +428,7 @@ footer {
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 501px) {
 
     .main-banner {
         height: 400px;
@@ -581,6 +581,10 @@ footer {
     
     .final-content-visitus-right {
         width: 100%;
+    }
+
+    .final-content-visitus-right img {
+        max-width: 300px;
     }
     
     .footer-content {
