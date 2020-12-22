@@ -495,4 +495,106 @@ footer {
     .first-content-img {
         display: none;
     }
+
+    .second {
+        height: 630px;
+    }
+    
+    .second-content {
+        text-align: justify;
+    }
+    
+    .second-content h2 {
+        font-size: 25px;
+        padding: 20px 4%;
+    }
+    
+    .second-content p {
+        font-size: 15px;
+        padding: 0px 18px;
+    }
+
+    .floated {
+        max-width: 320px;
+        top: 10px;
+    }
+
+    .team {
+        display: block;
+        height: unset;
+    }
+
+    .third {
+        width: 100%;
+        text-align: justify;
+        padding: 10px 20px;
+    }
+
+    .third-content {
+        width: 100%;
+        float: none;
+    }
+
+    .third-content p {
+        padding: 0;
+    }
+
+    .fourth {
+        width: 100%;
+        height: unset;
+        padding: 20px 20px;
+    }
+    
+    .fourth-content {
+        width: 100%;
+    }
+    
+    .fourth-content p {
+        text-align: justify;
+    }
+    .fourth #profile {
+        width: 55px;
+    }
+
+    .final {
+        height: 700px;
+    }
+
+    .final-content {
+        display: block;
+        height: unset;
+    }
+    
+    .final-content-contact {
+        width: 100%;
+        padding: 30px 0px;
+    }
+    
+    .final-content-contact-left {
+        width: 90%;
+    }
+
+    .final-content-visitus {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    
+    .final-content-visitus-right {
+        width: 100%;
+    }
+    
+    .footer-content {
+        font-size: 12px;
+        padding-top: 20px;
+        text-align: center;
+        line-height: 25px;
+    }
+    
+    #footer-left {
+        float: none;
+    }
+    
+    #footer-right {
+        float: none;
+    }
 }
