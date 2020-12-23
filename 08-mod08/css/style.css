@@ -129,10 +129,6 @@ nav a:focus {
     margin: 0 auto;
 }
 
-.section01-box-left {
-    display: inline-block;
-}
-
 .section01-box h1 {
     font-weight: 400;
     font-size: 30px;
@@ -177,6 +173,7 @@ nav a:focus {
 .section01-box-left {
     padding: 60px 0px 0px 10px;
     vertical-align: top;
+    display: inline-block;
 }
 .mobile-box {
     background-image: url('../images/mobile.png');
@@ -418,7 +415,9 @@ nav a:focus {
     --aspect-ratio02: 1/1;
     height: 0;
     padding-bottom: Calc(100% / (var(--aspect-ratio02)));
-    background-color: wheat;
+    background-image: url('../images/map.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 footer {
@@ -435,12 +434,13 @@ footer {
 
 .footer-left {
     float: left;
-    padding-top: 50px;
+    padding: 50px 0px 0px 10px;
 }
 
 .footer-right {
     float: right;
     padding-top: 50px;
+    padding: 50px 10px 0px 0px;
 }
 
 
@@ -462,6 +462,27 @@ footer {
     .mobile-box {
         display: none;
     }
+
+    .section01 {
+        height: 400px;
+    }
+
+    .section01-box {
+        padding-top: 50px;
+    }
+
+    .section01-box-left {
+        padding: 0px;
+        max-width: 450px;
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .section01-box-left ul {
+        list-style-position: inside;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width: 612px) {
@@ -471,4 +492,151 @@ footer {
     
 }
 
+}
+
+@media screen and (max-width: 550px) {
+
+    header {
+        padding-top: 30px;
+    }
+
+    .header-logo {
+        width: 180px;
+        height: 50px;
+        margin: 0 auto;
+    }
+    
+    nav {
+        float: none;
+        position: initial;
+        top: 0;
+        padding-right: 0px;
+        margin-top: 30px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    .overlay, .main-banner {
+        min-height: 500px;
+    }
+
+    .main-content-box {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 80px 10px 0px 10px;
+    }
+
+    .main-content {
+        margin: 0 auto;
+        max-width: 350px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .section02 {
+        padding: 0px 10px;        
+    }
+
+    .video-box {
+        margin: 40px auto 40px auto;
+    }
+
+    .section03-box {
+        display: block;
+    }
+    
+    .section03-box-left {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .section03-box-right {
+        padding-top: 30px;
+        width: 100%;
+    }
+    
+    
+    .section03-box-right img {
+        max-width: 50px;
+        display: inline-block;
+    }
+
+    .section04-box {
+        display: block;
+        padding: 0;
+    }
+    
+    .section04-box-left {
+        width: 100%;
+        padding: 0px 8px;
+    }
+
+    .section04-box-left form h2 {
+        text-align: center;
+        padding-top: 15px;
+    }
+
+    .section04-box-left form span {
+        display: block;
+        text-align: center;
+    }
+
+    .section04-box-left form input[type="submit"] {
+        display: block;
+        margin: 10px auto 0px auto;
+    }
+
+    .section04-box-right {
+        width: 100%;
+        padding: 20px 8px;
+        
+    }
+    
+    .section04-box-right-content {
+        text-align: center;
+    }
+
+    .section04-box-right-mapwrapper {
+        margin: 0 auto;
+    }
+
+    .footer-left {
+        float: none;
+        padding: 20px 10px 0px 10px;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    .footer-right {
+        float: none;
+        padding-top: 50px;
+        padding: 0px 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 347px) {
+    nav {
+        margin: 10px 10px 0px 10px;
+        background-color: #fe834a33;
+        border-radius: 10px;
+        padding-left: 5px;
+    }
+
+    nav ul {
+        line-height: 35px;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    .main-content-box {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 25px 10px 0px 10px;
+    }
 }
