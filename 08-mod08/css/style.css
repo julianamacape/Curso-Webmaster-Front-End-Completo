@@ -19,6 +19,7 @@ html, body {
 
 .main-banner {
     background-image: url('../images/main-banner.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -92,6 +93,10 @@ nav li:active {
     text-decoration: underline;
 }
 
+nav a:focus {
+    outline: none;
+}
+
 .main-content-box {
     max-width: 900px;
     margin: 0 auto;
@@ -114,15 +119,18 @@ nav li:active {
     background-color: #54346F;
     color: white;
     height: 350px;
+    max-height: 500px;
 }
 
-.section01-box-left {
-    display: inline-block;
-}
+
 .section01-box {
     height: 100%;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.section01-box-left {
+    display: inline-block;
 }
 
 .section01-box h1 {
@@ -182,10 +190,261 @@ nav li:active {
     left: 100px;
 }
 
+.section02 {
+    width: 100%;
+    
+}
+
+.section02-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.section02-box h1 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.section02-box p {
+    font-weight: 400;
+    padding: 0 20px;
+    line-height: 30px;
+}
+
+.video-box {
+    max-width: 600px;
+    margin: 40px auto -80px auto;
+    position: relative;
+    border-radius: 15px;
+}
+
+.video {
+    --aspect-ratio: 16/9;
+    height: 0;
+    padding-bottom: Calc(100% / (var(--aspect-ratio)));
+    background-color: gray;
+    box-shadow: 0px 0px 19px 1px #00000059;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section03 {
+    width: 100%;
+}
+
+.section03-box {
+    display: flex;
+}
+
+.section03-box-left {
+    background-color: #9472B3;
+    width: 50%;
+    padding-top: 90px;
+    color: white;
+}
+
+.section03-box-left h2 {
+    font-weight: 400;
+    text-align: right;
+    padding: 0px 20px 0px 0px;
+}
+
+.section03-box-left p {
+    font-weight: 300;
+    text-align: right;
+    padding: 20px 20px 20px 70px;
+}
+
+.section03-box-right {
+    background-color: rgb(248, 250, 255);
+    padding-top: 90px;
+    width: 50%;
+}
+
+.section03-box-right-titles {
+    display: inline-block;
+}
+
+.section03-box-right img {
+    max-width: 50px;
+    
+}
+
+.section03-box-right h2, .section03-box-right h3 {
+    padding: 0px 0px 0px 20px;
+}
+
+.section03-box-right h2 {
+    font-weight: 400;
+}
+
+.section03-box-right h3 {
+    font-style: italic;
+}
+
+.section03-box-right p {
+    padding: 0px 70px 0px 20px;
+}
+
+.slider-bullets {
+    margin-bottom: 20px;
+}
+
+.section03-box-right span {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-color: rgb(146, 146, 146);
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+.section03-box-right span:nth-of-type(1) {
+    background-color: rgb(61, 61, 61);
+    margin-left: 20px;
+}
+
+.section04 {
+    width: 100%;
+    background-color: #54346F;
+}
+
+.section04-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    color: white;
+    padding: 40px 0;
+}
+
+.section04-box-left {
+    width: 50%;
+    padding: 0px 8px;
+}
+
+.section04-box-left form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.section04-box-left h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.section04-box-left p {
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.section04-box-left input, .section04-box-left textarea {
+    display: block;
+    width: 100%;
+    padding-left: 8px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    border: none;
+} 
+
+.section04-box-left input, .section04-box-left textarea:focus {
+    outline: none;
+}
+
+.section04-box-left input {
+    height: 35px;
+}
+
+.section04-box-left textarea {
+    height: 85px;
+    padding-top: 8px;
+    resize: none;
+}
+
+.section04-box-left span {
+    font-weight: 200;
+    font-size: 12px;
+}
+
+.section04-box-left input[type="submit"] {
+    background-color: rgb(255, 122, 34);
+    color: white;
+    font-size: 15px;
+    padding: unset;
+    width: 120px;
+    border-radius: 60px;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.section04-box-left input[type="submit"]:hover {
+    background-color: rgb(255, 138, 60);
+}
+
+.section04-box-left input[type="submit"]:active {
+    font-size: 14px;
+}
+
+.section04-box-right {
+    width: 50%;
+    padding: 0px 8px;
+}
+
+.section04-box-right-content {
+    max-width: 400px;
+    margin: 0px auto;
+}
+
+.section04-box-right-content h2 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.section04-box-right-mapwrapper {
+    max-width: 300px;
+}
+
+.section04-box-right-map {
+    --aspect-ratio02: 1/1;
+    height: 0;
+    padding-bottom: Calc(100% / (var(--aspect-ratio02)));
+    background-color: wheat;
+}
+
+footer {
+    background-color: #1B252A;
+    color: white;
+    font-size: 12px;
+}
+
+.footer-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.footer-left {
+    float: left;
+    padding-top: 50px;
+}
+
+.footer-right {
+    float: right;
+    padding-top: 50px;
+}
 
 
-
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 779px) {
     .mobile-box {
         background-image: url('../images/mobile.png');
         background-size: contain;
@@ -203,4 +462,13 @@ nav li:active {
     .mobile-box {
         display: none;
     }
+}
+
+@media screen and (max-width: 612px) {
+
+.section03-box-right img {
+    display: none;
+    
+}
+
 }
