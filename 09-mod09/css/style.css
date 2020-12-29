@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+header {
+    padding-bottom: 25px;
+}
+
+.header-logo {
+    background-image: url('../images/fernanda.logo.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 50px;
+    float: left;
+    margin: 15px 0px 0px 40px;
+}
+
+.header-menu {
+    float: right;
+    margin: 35px 20px 0px 0px;
+}
+
+.header-menu li {
+    display: inline-block;
+    
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #B5B5B5;
+    margin-right: 70px;
+    font-size: 15px;
+}
+
+.header-menu a:hover {
+    color: rgb(153, 153, 153);;
+}
+
+.header-menu a:active {
+    text-decoration: underline;
+}
+
+section.one {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.mosaic-wrap {
+    display: flex;
+    padding: 0px 1%
+}
+
+.mosaic {
+    padding: 4px;
+    max-width: 200px;
+    width: Calc(100% /6);
+}
+
+.mosaic-item {
+    --aspect-ratio: 1/1;
+    height: 0;
+    padding-bottom: Calc(100% / (var(--aspect-ratio)));
+    position: relative;
+}
+
+.mosaic-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
