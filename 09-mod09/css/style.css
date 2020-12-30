@@ -17,10 +17,6 @@ html, body {
     clear: both;
 }
 
-header {
-    padding-bottom: 25px;
-}
-
 .header-logo {
     background-image: url('../images/fernanda.logo.png');
     background-position: center;
@@ -33,6 +29,7 @@ header {
 }
 
 header {
+    padding-bottom: 25px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -63,6 +60,14 @@ nav.header-menu a:hover {
 
 nav.header-menu a:active {
     text-decoration: underline;
+}
+
+nav.burguer-icon {
+    display: none;
+}
+
+nav.header-menu02 ul {
+    display: none;
 }
 
 main {
@@ -254,4 +259,99 @@ main {
     main {
         margin: 130px auto;
     }
+}
+
+@media screen and (max-width: 858px) {
+
+    .blocks h2 {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+
+    nav.header-menu {
+        display: none;
+    }
+
+    main {
+        margin: 91px auto 35px auto;
+    }
+
+    header {
+        padding-bottom: 0px;
+    }
+
+    .burguer-icon {
+        width: 100%;
+        height: 100%;
+        background-image: url('../images/burger-menu.png');
+        background-size: 40px;
+        background-repeat: no-repeat;
+        background-position: right top;
+        float: right;
+        margin: -50px 10px 0px 0px;
+        cursor: pointer;
+    }
+
+    .header-menu02 {
+        padding: 45px 0px 10px 50px;
+    }
+
+    nav.header-menu02 ul {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav.header-menu02 li {
+        padding: 5px 0px;
+    }
+    
+    nav.header-menu02 a {
+        text-decoration: none;
+        color: #B5B5B5;
+        margin-right: 70px;
+        font-size: 15px;
+        cursor: pointer;
+    }
+    
+    nav.header-menu02 a:hover {
+        color: rgb(153, 153, 153);
+    }
+
+    nav.header-menu02 li:hover {
+        background-color: lightblue;
+    }
+    
+    nav.header-menu02 a:active {
+        text-decoration: underline;
+    }
+
+    .burguer-icon:hover .header-menu02 {
+        animation-name: MenuAparece;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+    }
+
+    .burguer-icon:hover .header-menu02 ul {
+        display: initial;
+    }
+
+    /*
+    .burguer-icon:active nav.header-menu02{
+        animation-name: MenuAparece;
+        animation-duration: 2s;
+    }
+    */
+
+    @keyframes MenuAparece {
+        from {padding: 45px 0px 10px 50px;}
+        to {padding: 70px 0px 10px 50px;}
+    }
+
+
+    .header-logo {
+        float: left;
+    }
+
 }
