@@ -69,9 +69,59 @@ nav.header-menu02 {
     display: none;
 }
 
-main {
+main .mainbanner {
     padding-top: 100px;
+    background-image: url('../images/mainbanner.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
+
+.mainbanneritemwrapper {
+    margin: 200px 0 200px 200px;
+}
+.mainbanneritem {
+    color: white;
+    background-color: #fd4834;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 5px;
+    transform: skewX(-20deg);
+}
+
+.mainbanneritem span {
+    font-size: 27px;
+    padding-left: 8px;
+}
+
+.consultoria {
+    margin-left: 44px;
+    width: 160px;
+}
+
+.compra {
+    margin-left: 29px;
+    width: 106px;
+}
+
+.venda {
+    margin-left: 14px;
+    width: 86px;
+}
+
+.contato {
+    background-color: white;
+    color: black;
+    width: 336px;
+}
+
+.contato span {
+    font-size: 20px;
+}
+
+
+
+
 
 @media screen and (max-width: 840px) {
     header .header-logo {
@@ -90,6 +140,10 @@ main {
 
     main {
         padding-top: 140px;
+    }
+
+    .mainbanneritemwrapper {
+        margin: 0px 0 132px 60px;
     }
 }
 
@@ -130,6 +184,7 @@ main {
 
     header .header-menu02 ul {
         list-style-type: none;
+        background-color: white;
     }
 
     header .header-menu02 li {
@@ -157,7 +212,15 @@ main {
     }
 
     main {
-        padding-top: 350px;
+        padding-top: 100px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .mainbanneritemwrapper {
+        margin: 0px auto 132px auto;
+        max-width: 346px;
     }
 }
 
