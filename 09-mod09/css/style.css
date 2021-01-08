@@ -122,9 +122,51 @@ main .mainbanner {
     font-size: 20px;
 }
 
+section {
+    margin: 0 auto;
+    width: 1200px;
+}
 
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
 
+.one {
+    width: 20%;
+    background-color: red;
+}
 
+.two {
+    width: 25%;
+    background-color: blue;
+}
+
+.three {
+    width: 35%;
+    background-color: green;
+}
+
+/*
+section.destaque {
+    padding-top: 80px;
+    width: 1000px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+div.destaque-header {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+div.destaque-header-item {
+    width: Calc(100% / 3);
+    background-color: red;
+}
+*/
 
 @media screen and (max-width: 840px) {
     header .header-logo {
