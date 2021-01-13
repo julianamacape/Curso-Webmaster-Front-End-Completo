@@ -279,9 +279,136 @@ section.destaque .destaque-header {
     margin-bottom: 10px;
 }
 
+.arrows {
+    float: left;
+    cursor: pointer;
+}
+
+.arrowleft, .arrowright {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.arrowright:active, .arrowleft:active {
+    opacity: 50%;
+}
+
+.arrowleft img, .arrowright img {
+    width: 10px;
+}
+
 .depoimentos-content p {
     text-align: right;
     color: #2A292A;
+}
+
+.finalsection {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+    
+}
+
+.finalsection-header {
+    width: 100%;
+}
+
+.finalsection-line {
+    width: 100%;
+    height: 3px;
+    border: 2px solid black;
+    margin-top: 100px;
+    padding: 0 10px;
+}
+
+.finalsection-title {
+    text-align: center;
+    position: relative;
+    top: -45px;
+}
+.finalsection-title h2 {
+    font-size: 32px;
+    font-style: italic;
+    display: inline-block;
+    padding: 15px;
+    background-color: white;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input {
+    padding: 10px 0 5px 10px;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-flex {
+    width: 100%;
+    display: flex;
+}
+
+form input.w50 {
+    width: 50%;
+}
+
+form input[type="email"] {
+    margin-right: 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form input::placeholder {
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(179, 179, 179);
+}
+
+form textarea { 
+    display: block;
+    width: 100%;
+    resize: none;
+    padding: 5px 0 5px 10px;
+    margin-bottom: 20px;
+}
+
+form textarea::placeholder {
+    font-size: 25px;
+    font-style: italic;
+    color: rgb(179, 179, 179);
+}
+
+form textarea:focus {
+    outline: none;
+}
+
+form input[type="submit"] {
+    margin: 0 auto 20px auto;
+    width: 100px;
+    background-color: #fd4834;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1.5px solid #8b2419;
+    border-right: 1.5px solid #8b2419;
+}
+
+form input[type="submit"]:active {
+    border-bottom: none;
+    border-right: none;
+    border-top: 1.5px solid #8b2419;
+    border-left: 1.5px solid #8b2419;
+}
+
+form input[type="submit"]:focus {
+    outline: none;
 }
 
 @media screen and (max-width: 840px) {
@@ -310,6 +437,15 @@ section.destaque .destaque-header {
 
     .mainbanneritemwrapper {
         margin: 0px 0 132px 60px;
+    }
+
+    .servicos-content {
+        padding: 30px;
+    }
+
+    .depoimentos-content {
+        margin: 30px auto;
+        padding: 30px;
     }
 }
 
@@ -423,6 +559,14 @@ section.destaque .destaque-header {
     main {
         padding-top: 100px;
     }
+
+    .finalsection-title {
+        top: -40px;
+    }
+
+    .finalsection-title h2 {
+        font-size: 27px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -457,6 +601,14 @@ section.destaque .destaque-header {
         padding: 10px;
         margin: 0;
     }
+
+    .depoimentos-content h2, .depoimentos-content blockquote {
+        text-align: right;
+    }
+
+    .finalsection-line {
+        margin-top: 50px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -487,6 +639,14 @@ section.destaque .destaque-header {
 
     .contato span {
         font-size: 17px;
+    }
+
+    form input::placeholder {
+        font-size: 18px;
+    }
+    form textarea::placeholder {
+        font-size: 18px;
+        
     }
 
 }
