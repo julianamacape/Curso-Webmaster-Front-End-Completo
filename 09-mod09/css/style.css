@@ -123,9 +123,8 @@ main .mainbanner {
 }
 
 section.destaque {
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     max-width: 1000px;
-    height: 300px;
 }
 
 section.destaque .destaque-header {
@@ -164,7 +163,7 @@ section.destaque .destaque-header {
 }
 
 .carrowrapper {
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -177,7 +176,7 @@ section.destaque .destaque-header {
 
 .destaquecarro-text {
     font-style: italic;
-    max-width: 200px;
+    max-width: 300px;
     margin: 0 auto;
     padding: 5px;
 }
@@ -207,6 +206,82 @@ section.destaque .destaque-header {
 
 .destaquecarro-text button:focus {
     outline: none;
+}
+
+.serv-dep {
+    width: 100%;
+    display: flex;
+}
+
+.serv-dep-content  {
+    width: 50%;
+    color: white;
+    font-style: italic;
+}
+
+.servicos {
+    background-color: #2A292A;
+}
+
+.servicos-content {
+    max-width: 400px;
+    margin: 30px auto;
+}
+
+.servicos-content h2 {
+    margin-bottom: 20px;
+}
+
+.servicos-content ul {
+    list-style-position: inside;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.servicos-content button {
+    margin: 10px 0;
+    background-color: #fd4834;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    border-bottom: 1.5px solid #8b2419;
+    border-right: 1.5px solid #8b2419;
+}
+
+.servicos-content button:active {
+    border-bottom: none;
+    border-right: none;
+    border-top: 1.5px solid #8b2419;
+    border-left: 1.5px solid #8b2419;
+}
+
+.servicos-content button:focus {
+    outline: none;
+}
+
+.depoimentos {
+    background-color: #FC4831;
+}
+
+.depoimentos-content {
+    max-width: 400px;
+    margin: 30px auto 30px 80px;
+}
+
+.depoimentos-content h2 {
+    margin-bottom: 20px;
+}
+
+.depoimentos-content blockquote {
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.depoimentos-content p {
+    text-align: right;
+    color: #2A292A;
 }
 
 @media screen and (max-width: 840px) {
@@ -280,7 +355,7 @@ section.destaque .destaque-header {
 @media screen and (max-width: 610px) {
 
     header {
-        padding: 30px 8px 9px 8px;
+        padding: 30px 8px 50px 8px;
     }
 
     header .header-menu {
@@ -356,9 +431,35 @@ section.destaque .destaque-header {
         margin: 0px auto 132px auto;
         max-width: 346px;
     }
+
+    .destaque-content {
+        display: block;
+    }
+
+    .destaquecarro {
+        width: 100%;
+    }
+
+    .serv-dep {
+        display: block;
+    }
+    
+    .serv-dep-content  {
+        width: 100%;
+    }
+
+    .servicos-content {
+        padding: 10px;
+        margin: 0;
+    }
+
+    .depoimentos-content {
+        padding: 10px;
+        margin: 0;
+    }
 }
 
-@Media screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
     
     .mainbanneritemwrapper {
         max-width: 300px;
@@ -388,6 +489,21 @@ section.destaque .destaque-header {
         font-size: 17px;
     }
 
+}
+
+@media screen and (max-width: 355px) {
+    .destaquecarro-text button {
+        margin: 10px 0;
+        background-color: #fd4834;
+        color: white;
+        border: none;
+        font-size: 13px;
+        padding: 5px;
+        cursor: pointer;
+        border-bottom: 1.5px solid #8b2419;
+        border-right: 1.5px solid #8b2419;
+    }
+}
 
 @media screen and (max-width: 350px) {
     header .header-logo {
