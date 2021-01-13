@@ -411,6 +411,23 @@ form input[type="submit"]:focus {
     outline: none;
 }
 
+footer {
+    width: 100%;
+    background-color:  #2A292A;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 2% 20px 0;
+}
+
+.footer-content p {
+    color: white;
+    font-style: italic;
+    text-align: right;
+}
+
 @media screen and (max-width: 840px) {
     header .header-logo {
         float: none;
@@ -609,6 +626,23 @@ form input[type="submit"]:focus {
     .finalsection-line {
         margin-top: 50px;
     }
+
+    .input-flex {
+        width: 100%;
+        display: block;
+    }
+    
+    form input.w50 {
+        width: 100%;
+    }
+    
+    form input[type="email"] {
+        margin-right: 5px;
+    }
+
+    form textarea {
+        height: 150px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -647,6 +681,12 @@ form input[type="submit"]:focus {
     form textarea::placeholder {
         font-size: 18px;
         
+    }
+
+    .footer-content p {
+        font-size: 12px;
+        text-align: center;
+        padding: 10px 0;
     }
 
 }
