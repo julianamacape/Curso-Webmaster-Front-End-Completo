@@ -1,10 +1,8 @@
-function ParImp(x) {
-    if (x % 2 == 0) {
-        return 'Número PAR'
-    } else {
-        return 'Número ÍMPAR'
-    }
-}
+let map;
 
-let result = ParImp(45)
-console.log (result)
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
