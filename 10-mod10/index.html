@@ -1,92 +1,118 @@
 <html>
-<head>
-    <title>Projeto Cronometro - JavaScript</title>
-    <style>
-        .container{
-            text-align: center;
-        }
+    <head>
+        <title>Loja virtual</title>
+        <meta charset="utf-8" />
+        <style>
+            #produtos{
+                max-width: 900px;
+                margin:0 auto;
+                padding:0 2%;
+                display: flex;
+            }
+            
+            #carrinho{
+                max-width: 900px;
+                margin:0 auto;
+                padding:0 2%;
+                display: block;
+            }
 
-        button{
-            background: #069;
-            color:white;
-            font-size: 32px;
-            padding:8px 20px;
-            cursor: pointer;
-            border:0;
-        }
-    </style>
-</head>
+            .produto-single{
+                width:33.3%;
+                padding:0 20px;
+            }
+        </style>
+    </head>
 
-<body>
-    <audio id="sound" src="alarm.mp3" style="display: none;"></audio>
+    
+    <body>
 
-    <div class="container">
-        <h2>Minutos:</h2>
-        <select id="minutos" name="minutos"></select>
+        <h2>Vitrine:</h2>
 
-        <h2>Segundos:</h2>
-        <select id="segundos" name="segundos"></select>
-        <br/>
-        <br/>
-        <button id="comecar">Começar!</button>
+        <div id="produtos">
+         
+        </div><!--produtos-->
 
-        <div id="display">
-            <h3></h3>
-        </div><!--display-->
-    </div><!--container-->
+        <h2>Carrinho:</h2>
 
-    <script>
-        var display = document.getElementById('display');
+        <div id="carrinho">
 
-        var minutos = document.getElementById('minutos');
-        var segundos = document.getElementById('segundos');
+        </div><!--carrinho-->
 
-        var comecar = document.getElementById('comecar');
+        <script>
+            const items = [
+                {
+                    id: 0,
+                    nome: 'camiseta',
+                    img: 'image.jpg',
+                    quantidade: 0
+                },
+                {
+                    id: 1,
+                    nome: 'short',
+                    img: 'image.jpg',
+                    quantidade: 0
+                },
+                {
+                    id: 2,
+                    nome: 'sapato',
+                    img: 'image.jpg',
+                    quantidade: 0
+                },
+            ]
 
 
-        var cronometroSeg;
+            inicializarLoja = () => {
+                var containerProdutos = document.getElementById('produtos');
+                items.map((val)=>{
+                   containerProdutos.innerHTML+= `
+                   
+                   <div class="produto-single">
+                        <img src="`+val.img+`" />
+                        <p>`+val.nome+`</p>
+                        <a key="`+val.id+`" href="#">Adicionar ao carrinho!<a/>
+                    </div>
 
-        var minutoAtual;
-        var segundoAtual;
+                   
+                   `;
+                })
+            }
 
-        var interval;
+            inicializarLoja();
 
-        for(var i = 0; i <= 60; i++){
-            minutos.innerHTML+='<option value="'+i+'">'+i+'</option>';
-        }
 
-        for(var i = 1; i <= 60; i++){
-            segundos.innerHTML+='<option value="'+i+'">'+i+'</option>';
-        }
+            atualizarCarrinho = () => {
+               var containerCarrinho = document.getElementById('carrinho');
+               containerCarrinho.innerHTML = "";
+                items.map((val)=>{
+                    if(val.quantidade > 0){
+                   containerCarrinho.innerHTML+= `
+                   
+                   <p>`+val.nome+` | quantidade: `+val.quantidade+`</p>
+                   <hr>
 
-        comecar.addEventListener('click',function(){
-            minutoAtual = minutos.value;
-            segundoAtual = segundos.value;
-
-            display.childNodes[1].innerHTML = minutoAtual + ":"+segundoAtual;
-
-            interval = setInterval(function(){
-
-                segundoAtual--;
-                if(segundoAtual <= 0){
-                    if(minutoAtual > 0){
-                        minutoAtual--;
-                        segundoAtual = 59;
-                    }else{
-                        alert("Acabou!");
-                        document.getElementById("sound").play();
-                        clearInterval(interval);
+                   
+                   `;
                     }
-                }
-                
-                display.childNodes[1].innerHTML = minutoAtual + ":"+segundoAtual;
-            },1000);
+                })
+            }
 
 
-        })
+            var links = document.getElementsByTagName('a');
 
-    </script>
+            for(var i = 0; i < links.length; i++){
+                links[i].addEventListener("click",function(){
+                    let key = this.getAttribute('key');
+                    items[key].quantidade++;
+                    atualizarCarrinho();
+                    return false;
+                })
+            }
+           
 
-</body>
+
+        </script>
+
+    </body>
 
 </html>
