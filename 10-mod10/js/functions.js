@@ -1,8 +1,6 @@
-$(function(){
-    $('.artigo01  #aumenta').click(function(){
-        $('.artigo02').css('font-size','20px');
-    });
-    $('.artigo01  #diminui').click(function(){
-        $('.artigo02').css('font-size','10px');
-    });
-});
+$(document).ready(function(){
+    $('select').change(function(){
+        let choice = window.document.getElementById('cars').value
+        alert(`You chose: ${choice}`)
+    })
+})

@@ -21,16 +21,49 @@
             padding: 30px;
             background-color: burlywood;
             margin-bottom: 50px;
-            cursor: pointer;
+            
         }
 
         .artigo01 p {
+            cursor: pointer;
             line-height: 35px;
+            width: 100px;
+            background-color: cadetblue;
+            text-align: center;
+            margin: 15px auto;
+            border-radius: 50px;
+        }
+
+        .artigo01 p:hover {
+            font-size: 15px;
         }
 
         .artigo02 {
             padding: 30px;
             background-color: purple;
+            margin-bottom: 50px;
+        }
+
+        .artigo02 p {
+            color: white;
+            text-align: center;
+            font-size: 16px;
+        }    
+
+        .artigo03 p {
+            width: 50%;
+            text-align: justify;
+            margin: 0 auto;
+            line-height: 30px;
+        }
+
+        select {
+            height: 50px;
+            width: 400px;
+            margin: 20px auto;
+            display: block;
+            padding-left: 10px;
+            
         }
 
     </style>
@@ -43,6 +76,18 @@
     <div id="teste" class="artigo02">
         <p>Hello, world!</p>
     </div>
+    <div class="artigo03">
+        <p>Aqui vemos como jQuery nos ajuda na interação e manipulação de elementos não-relacionados hierarquicaemente em HTML. Ou seja, através do jQuery, eu consigo interajir com um elemento e ver a manifestação em outro elemento que nem é "parent" nem "child" um do outro. Sensacional!</p>
+    </div>
+
+    <select name="cars" id="cars">
+        <option value="Fiat">Fiat</option>
+        <option value="Ford">Ford</option>
+        <option value="Audi">Audi</option>
+        <option value="Renault">Renault</option>
+        <option value="Citroën">Citroën</option>
+        <option value="Volkswagen">Volkswagen</option>
+    </select>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/functions.js"></script>
 </body>
