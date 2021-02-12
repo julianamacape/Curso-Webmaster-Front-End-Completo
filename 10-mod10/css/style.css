@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+.artigo01 {
+    padding: 30px;
+    background-color: burlywood;
+    margin-bottom: 50px;
+    
+}
+
+.artigo01 p {
+    line-height: 35px;
+    width: 100px;
+    background-color: cadetblue;
+    text-align: center;
+    margin: 15px auto;
+    border-radius: 50px;
+}
+
+.artigo01 #aumenta {
+    cursor: zoom-in;
+}
+
+.artigo01 #diminui {
+    cursor: zoom-out;
+}
+
+.artigo01 #some {
+    cursor: none;
+}
+
+.artigo01 p:hover {
+    font-size: 15px;
+}
+
+.artigo02 {
+    padding: 30px;
+    background-color: purple;
+    margin-bottom: 50px;
+}
+
+.artigo02 p {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+}    
+
+.artigo03 p {
+    width: 50%;
+    text-align: justify;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+input {
+    height: 50px;
+    border: 1px solid black;
+    width: 400px;
+    margin: 20px auto;
+    display: block;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.divexample {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(220, 20, 60, 0.397);
+    cursor: pointer;
+}           
+
+.divtest {
+    width: 500px;
+    cursor: pointer;
+    margin: 40px auto;
+    background-color: red;
+
+}
+
+.divtest p {
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}

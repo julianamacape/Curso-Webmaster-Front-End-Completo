@@ -43,4 +43,11 @@ $(document).ready(function(){
         e.stopPropagation();
     })
 
+    let divtest = $('.divtest')
+
+    divtest.click(function(){
+        divtest.css('background-color', 'green');
+        divtest.html(divtest.html() + '<p id="parag02">Esse parágrafo foi adicionado dinamicamente em JavaScript</p>')
+    });
+    
 });

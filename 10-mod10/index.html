@@ -5,90 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html, body {
-            height: 100%;
-        }
-
-        .artigo01 {
-            padding: 30px;
-            background-color: burlywood;
-            margin-bottom: 50px;
-            
-        }
-
-        .artigo01 p {
-            line-height: 35px;
-            width: 100px;
-            background-color: cadetblue;
-            text-align: center;
-            margin: 15px auto;
-            border-radius: 50px;
-        }
-
-        .artigo01 #aumenta {
-            cursor: zoom-in;
-        }
-
-        .artigo01 #diminui {
-            cursor: zoom-out;
-        }
-
-        .artigo01 #some {
-            cursor: none;
-        }
-
-        .artigo01 p:hover {
-            font-size: 15px;
-        }
-
-        .artigo02 {
-            padding: 30px;
-            background-color: purple;
-            margin-bottom: 50px;
-        }
-
-        .artigo02 p {
-            color: white;
-            text-align: center;
-            font-size: 16px;
-        }    
-
-        .artigo03 p {
-            width: 50%;
-            text-align: justify;
-            margin: 0 auto;
-            line-height: 30px;
-        }
-
-        input {
-            height: 50px;
-            border: 1px solid black;
-            width: 400px;
-            margin: 20px auto;
-            display: block;
-            padding-left: 10px;
-            border-radius: 10px;
-        }
-
-        input:focus {
-            outline: none;
-        }
-
-        .divexample {
-            padding: 50px;
-            text-align: center;
-            background-color: rgba(220, 20, 60, 0.397);
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="artigo01">
@@ -109,6 +26,9 @@
         <div class="divexample" id="div2">
             DIV2
         </div>
+    </div>
+    <div class="divtest">
+        <p id="parag01">Click in the box to see its transformation</p>
     </div>
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/functions.js"></script>
