@@ -21,13 +21,13 @@ $(document).ready(function(){
         e.preventDefault();
     })
 
-    $('input').focus(function(){
-        $('input').css('width','600px')
+    $('input#name').focus(function(){
+        $('input#name').css('width','600px')
     }).blur(function(){
-        $('input').css('width','400px')
+        $('input#name').css('width','400px')
     })
 
-    $('input').change(function(){
+    $('input#name').change(function(){
         let info = window.document.getElementById('name').value
         alert(`Prazer em te conhecer, ${info}`)
     })
@@ -49,5 +49,16 @@ $(document).ready(function(){
         divtest.css('background-color', 'green');
         divtest.html(divtest.html() + '<p id="parag02">Esse parágrafo foi adicionado dinamicamente em JavaScript</p>')
     });
-    
+
+    $('.divtest2').html('<textarea name="" id="" cols="30" rows="10"></textarea>')
+
+    let msgbox = $('.divtest2 textarea')
+    msgbox.css('width','600px').css('padding','10px').css('resize','none')
+    msgbox.val('Teste da função .val()')
+
+    $('input#emailbutton').click(function(){
+        
+        console.log($('input#email').val().split('@'))
+    })
+
 });
