@@ -74,4 +74,9 @@ $(document).ready(function(){
         alert(`Você escreveu na caixinha ${box}`)
     });
 
+    $('#form2').submit(function(f){
+        let input_value = $('#text2').val();
+        $('#form2 div').append(input_value)
+        f.preventDefault();
+    });
 });
