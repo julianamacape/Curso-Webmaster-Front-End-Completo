@@ -112,3 +112,11 @@ form div {
     margin: 0 auto;
     width: 200px;
 }
+
+.divtest3 {
+    height: 40px;
+    width: 800px;
+    border: 1px solid black;
+    margin: 20px auto;
+    padding: 10px 10px;
+}

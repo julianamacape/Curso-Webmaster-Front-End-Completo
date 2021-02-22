@@ -56,9 +56,22 @@ $(document).ready(function(){
     msgbox.css('width','600px').css('padding','10px').css('resize','none')
     msgbox.val('Teste da função .val()')
 
+    $('#email').keydown(function(){
+        $(this).css('background-color','black');
+    });
+
+    $('#email').keyup(function(){
+        $(this).css('background-color','orange');
+    });
+
     $('input#emailbutton').click(function(){
         let login = $('input#email').val().split('@')
         alert(`Seu nome de usuário é ${login[0]}`)
     })
     
+    $('.divtest3 input').change(function(){
+        let box = $(this).index() + 1
+        alert(`Você escreveu na caixinha ${box}`)
+    });
+
 });
