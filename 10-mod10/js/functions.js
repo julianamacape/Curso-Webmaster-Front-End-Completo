@@ -57,8 +57,8 @@ $(document).ready(function(){
     msgbox.val('Teste da função .val()')
 
     $('input#emailbutton').click(function(){
-        
-        console.log($('input#email').val().split('@'))
+        let login = $('input#email').val().split('@')
+        alert(`Seu nome de usuário é ${login[0]}`)
     })
-
+    
 });
