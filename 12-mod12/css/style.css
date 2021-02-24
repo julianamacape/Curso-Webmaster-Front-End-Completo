@@ -120,3 +120,29 @@ form div {
     margin: 20px auto;
     padding: 10px 10px;
 }
+
+.comparison {
+    width: 606px;
+    margin: 0 auto;
+    
+}
+
+.comparisonbox, .movebox {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(192, 192, 192);
+    border: 1px solid black;
+}
+
+.comparisoncontent, .movecontent {
+    background-color: white;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}

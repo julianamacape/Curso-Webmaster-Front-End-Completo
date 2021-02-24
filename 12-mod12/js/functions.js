@@ -84,5 +84,23 @@ $(document).ready(function(){
         f.preventDefault();
     });
 
+    let i = 1;
+    let j = 1;
+    let l = 1;
+    $('.comparisonbox').eq(0).mouseover(function(){
+        $('.comparisoncontent span').eq(0).html(i++);
+    });
+
+    $('.comparisonbox').eq(1).mouseenter(function(){
+        $('.comparisoncontent span').eq(1).html(j++);
+    });
+
+    $('.movebox').eq(0).mousemove(function(){
+        $('.movecontent span').eq(0).html(l++);
+    });
+
+    $(".movebox").eq(1).mousemove(function(event){
+        $(".movecontent span").eq(1).text(`${event.pageX} , ${event.pageY}`);
+      });
 
 });
