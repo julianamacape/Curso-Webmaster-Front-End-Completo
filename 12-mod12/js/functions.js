@@ -47,7 +47,11 @@ $(document).ready(function(){
 
     divtest.click(function(){
         divtest.css('background-color', 'green');
-        divtest.html(divtest.html() + '<p id="parag02">Esse parágrafo foi adicionado dinamicamente em JavaScript</p>')
+        divtest.html(divtest.html() + '<p id="parag02">Esse parágrafo foi adicionado dinamicamente em JavaScript</p>');
+        /*
+        Ou então usa o append() que é muito mais sábio nesse caso:
+        divtest.append('<p id="parag02">Esse parágrafo foi adicionado dinamicamente em JavaScript</p>');
+        */
     });
 
     $('.divtest2').html('<textarea name="" id="" cols="30" rows="10"></textarea>')
@@ -56,8 +60,8 @@ $(document).ready(function(){
     msgbox.css('width','600px').css('padding','10px').css('resize','none')
     msgbox.val('Teste da função .val()')
 
-    $('#email').keydown(function(){
-        $(this).css('background-color','black');
+    $('#email').keydown(function(e){
+        $('#form1 div').append(`You pressed key numer: ${e.which} <br>`);
     });
 
     $('#email').keyup(function(){
@@ -79,4 +83,6 @@ $(document).ready(function(){
         $('#form2 div').append(input_value)
         f.preventDefault();
     });
+
+
 });
