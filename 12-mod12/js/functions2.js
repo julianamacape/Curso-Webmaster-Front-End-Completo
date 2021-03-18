@@ -14,6 +14,10 @@ $(document).ready(function(){
     if (name.length == 0 || phone.length == 0 || email.length == 0) {
       alert ('Preencha todos os campos!')
     } else {
+      let validation = email.match(/^(.*?)@(.*?)$/);
+      console.log(validation[0]);
+      console.log(validation[1]);
+      console.log(validation[2]);
       $('.inputcontainer').replaceWith('<p>Mensagem enviada com sucesso! <br> Entraremos em contato em breve =)</p>');
       $('.overlay form p').addClass('inputparag')
       setTimeout(reloadpage,3000)
