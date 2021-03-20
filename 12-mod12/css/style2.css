@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+nav {
+    background-color: goldenrod;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+section {
+    padding: 300px 0;
+}
+
+.section1 {
+    background-color: coral;   
+    position: relative;
+    top: 78px;
+}
+
+.section2 {
+    background-color: darkcyan;
+}
+
+.section3 {
+    background-color: darkorchid;
+}
