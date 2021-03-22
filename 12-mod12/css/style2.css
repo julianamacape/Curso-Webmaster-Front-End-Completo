@@ -24,12 +24,22 @@ nav ul li {
     padding: 10px 40px;
 }
 
+nav li a {
+    text-decoration: none;
+}
+
 section {
     padding: 300px 0;
 }
 
+.active {
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
 .section1 {
-    background-color: coral;   
+    background-color: coral;
     position: relative;
     top: 78px;
 }
@@ -40,4 +50,5 @@ section {
 
 .section3 {
     background-color: darkorchid;
+    padding: 500px 0px;
 }
