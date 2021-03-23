@@ -52,3 +52,15 @@ section {
     background-color: darkorchid;
     padding: 500px 0px;
 }
+
+div {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+div img {
+    display: none;
+    width: 100%;
+    position: absolute;
+}
