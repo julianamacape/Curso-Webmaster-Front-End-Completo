@@ -53,14 +53,51 @@ section {
     padding: 500px 0px;
 }
 
-div {
+#div1 {
     width: 50%;
     margin: 0 auto;
     position: relative;
 }
 
-div img {
+#div1 img {
     display: none;
     width: 100%;
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#div2 {
+    width: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: 300px;
+}
+
+#div2 img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+
+#bullets {
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    position: relative;
+    top: 780px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bullets .bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    display: inline-block;
+    cursor: pointer;
 }
