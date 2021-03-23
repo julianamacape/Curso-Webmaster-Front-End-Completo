@@ -40,9 +40,9 @@ $(document).ready(function(){
         if(indiceAtual == indiceMaximo){
             indiceAtual = 0
         }
-        picture.eq(indiceAtual).fadeIn(2000);
-        
+        picture.eq(indiceAtual).fadeIn(2000); 
     }
 
     
+
 })

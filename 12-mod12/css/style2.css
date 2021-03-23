@@ -76,6 +76,7 @@ section {
 }
 
 #div2 img {
+    display: none;
     width: 100%;
     position: absolute;
     top: 0;
@@ -100,4 +101,8 @@ section {
     background-color: gray;
     display: inline-block;
     cursor: pointer;
+}
+
+#bullets .selected {
+    background-color: black;
 }
