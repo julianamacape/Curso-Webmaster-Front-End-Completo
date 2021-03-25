@@ -24,7 +24,7 @@ slider.oninput = function(){
 }
 */
 
-slider.addEventListener('mousemove',function(){
+slider.addEventListener('input',function(){
     let x = slider.value;
     let color = `linear-gradient(90deg, #79d983 ${x}%, #edffef ${x}%)`;
     slider.style.background = color
